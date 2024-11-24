@@ -39,5 +39,79 @@ body {
     align-items: center;
     justify-content: center;
     block-size: 100vh;
+    line-height: 150%;
+    font-size: .875rem;
+    text-align: center;
+    color: var(--white);
 }
 
+/* card */
+
+.card {
+    background: var(--gray800);
+    border-radius: .725rem;
+    padding: 1.5rem;
+    margin-inline: 1rem;
+    inline-size: 100%;
+    max-inline-size: 28.5rem;
+    box-sizing: border-box;
+}
+
+.card_img {
+    display: block;
+    inline-size: 5.5rem;
+    block-size: 5.5rem;
+    margin-inline: auto;
+    border-radius: 6.25rem;
+}
+
+.card_name {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-block: 1.5rem .25rem;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.card_address {
+    font-weight: 700;
+    color: var(--green);
+    margin-block: .25rem 1.5rem;
+}
+
+/* redes */
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    margin-block-start: 1.5rem;
+}
+
+.redes_link {
+    color: var(--white);
+    background: var(--gray700);
+    font-size: .875rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    padding: .75rem;
+    border-radius: .5rem;
+    transition: background .7s, color .7s;
+
+    &:hover {
+        background: var(--green);
+        color: var(--gray700);
+    }
+}
+
+@media (width >= 758px) {
+    .card {
+        padding: 2.5rem;
+    }
+}
+
+@media (width >= 1366px) {
+    .card {
+        max-inline-size: 24rem;
+    }
+}
